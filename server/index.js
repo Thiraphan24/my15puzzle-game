@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -24,8 +25,11 @@ function convertIsoDateToMinutesSeconds(isoDate) {
   return formattedTime;
 }
 // การเชื่อมต่อ MongoDB
+require("dotenv").config();
+
+
 mongoose
-  .connect("mongodb+srv://Thiraphan:TRP11332@my15puzzle.g5dgc.mongodb.net/15Puzzle?retryWrites=true&w=majority&appName=My15puzzle", {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -171,7 +175,7 @@ app.get("/bestTime/:name", async (req, res) => {
 });
 
 // กำหนด Port ที่ Server จะใช้
-const port = 3003;
+const port = process.env.PORT || 3003;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
