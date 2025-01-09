@@ -1,0 +1,20 @@
+{
+  "name": "my15puzzle-game",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000n\u0000e\u0000w\u0000-\u00001\u00005\u0000-\u0000p\u0000u\u0000z\u0000z\u0000l\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thiraphan24/my15puzzle-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thiraphan24/my15puzzle-game/issues"
+  },
+  "homepage": "https://github.com/Thiraphan24/my15puzzle-game#readme"
+}
