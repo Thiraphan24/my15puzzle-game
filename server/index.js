@@ -30,7 +30,7 @@ function convertIsoDateToMinutesSeconds(isoDate) {
 
 
 mongoose
-  .connect( "mongodb+srv://Thiraphan:TRP11332@my15puzzle.g5dgc.mongodb.net/15Puzzle?retryWrites=true&w=majority&appName=My15puzzle", {
+  .connect( process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
