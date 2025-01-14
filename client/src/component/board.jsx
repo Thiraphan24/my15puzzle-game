@@ -47,7 +47,7 @@ const Board = (props) => {
     // Fetch best time when the component mounts
     const fetchBestTime = async () => {
       try {
-        const response = await fetch(`https://my15puzzle-game.onrender.com/${name}`);
+        const response = await fetch(`https://my15puzzle-game.onrender.com/bestTime/${name}`);
         const data = await response.json();
 
         if (data.bestTime) {
